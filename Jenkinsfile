@@ -5,7 +5,7 @@ pipeline {
     agent{
         dockerfile {
             filename 'Dockerfile'
-            tag ${params.version}
+            tag "${params.version}"
         }  
     }
     stages{
